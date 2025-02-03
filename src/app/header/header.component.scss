@@ -1,0 +1,11 @@
+// practicing importing partial scss file
+@import '../partial';
+
+header {
+  @include creepyFont();
+  height: 10vh;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+

@@ -1,0 +1,18 @@
+<footer>
+<div id='footer-links'>
+    @for (item of [
+      { title: 'Github', link: 'https://github.com/Ahmed54aj' },
+      { title: 'Youtube', link: 'https://www.youtube.com/@AyJay123' },
+      { title: 'Basic html/css Portfolio site', link: 'https://es2cs.com/' },
+    ]; track item.title) {
+      <a
+        [href]="item.link"
+        target="_blank"
+        rel="noopener"
+      >
+        <span>{{ item.title }}</span>
+      </a>
+    }
+  </div>
+ 
+</footer>

@@ -1,5 +1,5 @@
 {
-  "name": "splatoon-3-team-select",
+  "name": "miw_album_select",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:splatoon_3_team_select": "node dist/splatoon_3_team_select/server/server.mjs"
+    "serve:ssr:miw_album_select": "node dist/miw_album_select/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +22,7 @@
     "@angular/router": "^19.1.0",
     "@angular/ssr": "^19.1.5",
     "express": "^4.18.2",
+    "miw_album_select": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

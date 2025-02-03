@@ -1,0 +1,123 @@
+
+
+// practicing importing partial scss file
+@import '../partial';
+
+#Creatures-card {
+  color: map-get($creatures-colors, 'creatures-light-blue');
+  text-shadow: 
+  0 0 6px black, 
+  0 0 8px map-get($creatures-colors, 'creatures-deep-purple'), 
+  0 0 10px map-get($creatures-colors, 'creatures-blue'),
+  0 0 12px map-get($creatures-colors, 'creatures-light-purple'),
+  0 0 14px map-get($creatures-colors, 'creatures-light-blue');
+  &:hover {
+    box-shadow: 
+    0 4px 8px 6px rgba(0, 0, 0, 0.1), 
+    0 0 10px map-get($creatures-colors, 'creatures-deep-purple'), 
+    0 0 14px map-get($creatures-colors, 'creatures-light-purple'),
+    0 0 16px map-get($creatures-colors, 'creatures-yellow');
+  }
+}
+
+#Infamous-card {
+  color:  map-get($infamous-colors, 'infamous-red');
+  text-shadow: 
+  0 0 8px map-get($infamous-colors, 'infamous-black'),
+  0 0 12px map-get($infamous-colors, 'infamous-gold'), 
+  0 0 14px map-get($infamous-colors, 'infamous-white');
+  &:hover {
+  box-shadow: 
+    0 4px 12px map-get($infamous-colors, 'infamous-black'), 
+    0 0 14px map-get($infamous-colors, 'infamous-gold'), 
+    0 0 16px map-get($infamous-colors, 'infamous-white'), 
+  }
+}
+
+#Reincarnate-card {
+  color: map-get($reincarnate-colors, 'reincarnate-black');
+  text-shadow: 
+    0 0 8px map-get($reincarnate-colors, 'reincarnate-red'),
+    0 0 10px map-get($reincarnate-colors, 'reincarnate-orange'), 
+    0 0 12px map-get($reincarnate-colors, 'reincarnate-black');
+  &:hover {
+    box-shadow: 
+      0 4px 8px map-get($reincarnate-colors, 'reincarnate-black'),
+      0 0 10px map-get($reincarnate-colors, 'reincarnate-red'),
+      0 0 12px map-get($reincarnate-colors, 'reincarnate-orange');
+  }
+}
+
+
+div[id$="Graveyard Shift-card"] {
+  color: map-get($graveyardshift-colors, 'graveyardshift-black');
+  text-shadow: 
+  0 0 8px map-get($graveyardshift-colors, 'graveyardshift-tan'),
+  0 0 10px map-get($graveyardshift-colors, 'graveyardshift-brown'), 
+  0 0 12px map-get($graveyardshift-colors, 'graveyardshift-black');
+  &:hover {
+    box-shadow: 
+      0 4px 6px map-get($graveyardshift-colors, 'graveyardshift-black'), 
+      0 0 13px map-get($graveyardshift-colors, 'graveyardshift-brown'), 
+      0 0 16px map-get($graveyardshift-colors, 'graveyardshift-tan');
+    }
+}
+
+#Disguise-card {
+  color: map-get($disguise-colors, 'disguise-light-blue');
+  text-shadow: 
+    0 0 4px black,
+    0 0 8px map-get($disguise-colors, 'disguise-deep-blue'),
+    0 0 10px map-get($disguise-colors, 'disguise-deep-purple'), 
+    0 0 12px map-get($disguise-colors, 'disguise-light-purple');
+  &:hover {
+    box-shadow: 
+      0 4px 8px map-get($disguise-colors, 'disguise-deep-blue'),
+      0 0 12px map-get($disguise-colors, 'disguise-deep-purple'),
+      0 0 16px map-get($disguise-colors, 'disguise-light-purple');
+  }
+}
+
+div[id$="Scoring the End of the World-card"] {
+  color: map-get($steotw-colors, 'steotw-orange');
+  text-shadow: 
+  0 0 8px map-get($steotw-colors, 'steotw-black'),
+  0 0 10px map-get($steotw-colors, 'steotw-fire'), 
+  0 0 12px map-get($steotw-colors, 'steotw-orange');
+  &:hover {
+    box-shadow: 
+      0 4px 10px map-get($steotw-colors, 'steotw-fire'), 
+      0 0 13px map-get($steotw-colors, 'steotw-orange'), 
+      0 0 16px map-get($steotw-colors, 'steotw-yellow'), 
+    }
+}
+  
+  // Styles for each card
+  .album-card {
+    cursor: default;
+    @include creepyFont();
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    opacity: .5;
+  
+    // Hover effect for interactivity
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+      opacity: 1;
+      scale: 1.02;
+      transition: ease all 0.3s;
+    }
+  }
+
+  
+

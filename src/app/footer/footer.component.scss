@@ -1,0 +1,25 @@
+@import '../partial';
+
+footer {
+    width: 100vw;
+    height: 10vh;
+}
+
+#footer-links {
+    @include creepyFont();
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    a {
+        color: blue;  
+        text-decoration: none; 
+        
+        &:hover {
+          color: black; 
+          text-decoration: underline; 
+        }
+
+    }
+}

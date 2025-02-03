@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "splatoon_3_team_select": {
+    "miw_scss_album_project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/splatoon_3_team_select",
+            "outputPath": "dist/miw_scss_album_project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "splatoon_3_team_select:build:production"
+              "buildTarget": "miw_scss_album_project:build:production"
             },
             "development": {
-              "buildTarget": "splatoon_3_team_select:build:development"
+              "buildTarget": "miw_scss_album_project:build:development"
             }
           },
           "defaultConfiguration": "development"

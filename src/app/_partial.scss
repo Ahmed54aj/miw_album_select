@@ -1,0 +1,66 @@
+//  practice for font import
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+
+
+@mixin creepyFont($desktop-size: 24px, $tablet-size: 20px, $mobile-size: 18px) {
+  font-family: 'Metal Mania', serif;
+  font-size: $desktop-size;
+
+  @media (max-width: 768px) {
+    font-size: $tablet-size;
+  }
+
+  @media (max-width: 480px) {
+    font-size: $mobile-size;
+  }
+}
+
+
+//  variable practice
+$creatures-colors: (
+  creatures-light-purple: #AD86BF,
+  creatures-deep-purple: #270C3F,
+  creatures-light-blue: #ADD2DD,
+  creatures-blue: #4155A0,
+  creatures-yellow: #E9E8B0,
+  creatures-white: #ecf0f1
+);
+
+
+$infamous-colors: (
+  infamous-red: #B40218,
+  infamous-gold: #989A69,
+  infamous-black: #010B0A,
+  infamous-grey: #3A443B,
+  infamous-white: white
+);
+
+$reincarnate-colors: (
+  reincarnate-black: #000909,
+  reincarnate-red: #8E1500,
+  reincarnate-white: #948A76,
+  reincarnate-orange: #E5B366,
+);
+
+$graveyardshift-colors: (
+  graveyardshift-black: #0C0C0E,
+  graveyardshift-tan: #ADA298,
+  graveyardshift-brown: #1C140F,
+  graveyardshift-white: #CAC5BF
+);
+
+
+$disguise-colors: (
+  disguise-light-purple: #813E99,
+  disguise-deep-purple: #5C1A6C,
+  disguise-light-blue: #52739E,
+  disguise-deep-blue: #0C0766,
+);
+
+$steotw-colors: (
+  steotw-yellow: #F4DF61,
+  steotw-fire: #D24A21,
+  steotw-black: #252428,
+  steotw-orange: #ED7F1E,
+);

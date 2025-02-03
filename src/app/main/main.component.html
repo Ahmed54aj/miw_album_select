@@ -1,0 +1,10 @@
+<main class="main">
+
+        <app-team-card 
+        *ngFor="let card of cardData" 
+        [title]="card.title" 
+        [source]="card.source" 
+        [alt]="card.alt">
+      </app-team-card>
+
+  </main>
