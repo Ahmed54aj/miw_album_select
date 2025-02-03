@@ -11,4 +11,4 @@ Copy the url and use command "git clone " followed by the copied link in your te
 move into the main directory of the project folder and run "ng serve" to run the angular app
 
 @@ SCREENSHOTS
-![Default](assets/screenshots/default.png)
+![Default](assets/screenshots/default.PNG)
