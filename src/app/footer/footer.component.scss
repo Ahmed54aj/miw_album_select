@@ -17,9 +17,9 @@ footer {
         text-decoration: none; 
         
         &:hover {
-          color: black; 
           text-decoration: underline; 
-        }
+          color: darken(blue, 20%); 
+                }
 
     }
 }
